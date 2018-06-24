@@ -1,0 +1,14 @@
+{
+  "env": {
+    "es6": true,
+    "browser": true
+  },
+  "extends": "airbnb",
+  "rules": {
+    "no-console": 1,
+    "no-unused-vars": 1,
+    "indent": ["error", 4],
+    "react/jsx-indent": ["error", 4]
+  },
+  "plugins": ["html", "markdown"]
+}
