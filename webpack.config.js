@@ -79,14 +79,18 @@ module.exports = (env, argv) => {
                 },
             ],
         },
+        optimization: {
+            minimizer: [
+                new UglifyJSPlugin({
+                    uglifyOptions: {
+                        compress: {
+                            drop_console: true,
+                        },
+                    },
+                }),
+            ],
+        },
         plugins: [
-            new UglifyJSPlugin({
-                uglifyOptions: {
-                    compress: {
-                        drop_console: isProduction,
-                    }
-                }
-            }),
             new HtmlWebPackPlugin({
                 template: './src/index.html',
                 filename: './index.html',
