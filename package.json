@@ -2,6 +2,8 @@
   "name": "webpack-quickstart",
   "version": "0.1.0",
   "description": "",
+  "author": "",
+  "license": "ISC",
   "scripts": {
     "start": "webpack-dev-server --mode development --open",
     "build": "webpack --mode production",
@@ -9,8 +11,13 @@
     "lint:scss": "./node_modules/stylelint/bin/stylelint.js ./src/**/*.scss --syntax scss",
     "lint": "npm run lint:js --silent && npm run lint:scss --silent"
   },
-  "author": "",
-  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.6.2",
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1"
+  },
   "devDependencies": {
     "babel-core": "^6.26.3",
     "babel-eslint": "^8.2.6",
@@ -39,15 +46,9 @@
     "style-loader": "^0.21.0",
     "stylelint": "^9.3.0",
     "stylelint-config-standard": "^18.2.0",
+    "uglifyjs-webpack-plugin": "^1.2.7",
     "webpack": "^4.16.1",
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.4"
-  },
-  "dependencies": {
-    "prop-types": "^15.6.2",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
-    "react-router": "^4.3.1",
-    "react-router-dom": "^4.3.1"
   }
 }

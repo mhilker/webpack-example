@@ -6,8 +6,8 @@
   },
   "extends": "airbnb",
   "rules": {
-    "no-console": 1,
-    "no-unused-vars": 1,
+    "no-console": ["off"],
+    "no-unused-vars": ["warn"],
     "indent": ["error", 4],
     "react/jsx-indent": ["error", 4],
     "react/jsx-indent-props": ["error", 4],
