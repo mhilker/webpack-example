@@ -6,10 +6,9 @@ module.exports = {
     resolve: {
         extensions: ['.js', '.jsx'],
     },
+    devtool: 'cheap-module-source-map',
     devServer: {
-        headers: {
-            'X-Frame-Options': 'ALLOW-FROM *',
-        },
+        historyApiFallback: true,
     },
     module: {
         rules: [
