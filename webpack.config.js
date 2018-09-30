@@ -6,7 +6,7 @@ module.exports = (env, argv) => {
     const isProduction = argv.mode === 'production';
 
     return {
-        entry: ['babel-polyfill', './src/index.jsx'],
+        entry: ['@babel/polyfill', './src/index.jsx'],
         resolve: {
             extensions: ['.js', '.jsx'],
         },
